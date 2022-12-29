@@ -12,4 +12,4 @@ while count <10 :
   print(f" We're counting odd numbers : {count}")
   count +=1
     
-  
+  #Continue will stop the execution of the loop for current iteration 

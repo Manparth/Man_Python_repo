@@ -1,0 +1,17 @@
+import random
+import string
+
+def ec2_names():
+  
+    number = (int(input("Please enter the number of EC2 instances that you want the name for ?")))
+    department = (input("What is the name of your dept?"))
+    
+    instances = []
+    
+    for n in range(number):
+    
+        res = ''.join(random.choices(string.ascii_lowercase + string.digits, k=7))
+        name = department + "---" + res
+        instances.append(name)
+     print(instances)
+print(ec2_names())
